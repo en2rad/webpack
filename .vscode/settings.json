@@ -1,0 +1,15 @@
+{
+    "git.enabled": false,
+    "liveSassCompile.settings.formats": [
+  
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/src/style"
+      }
+    ],
+    "compile-hero.disable-compile-files-on-did-save-code": false
+  }
+
+
+  

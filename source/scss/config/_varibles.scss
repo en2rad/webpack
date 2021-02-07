@@ -1,0 +1,26 @@
+$bg_gradient: linear-gradient(0deg, rgba(253,82,114,1) 0%, rgba(247,115,89,1) 100%) rgb(253,82,114),;
+
+$primary_color: #fff;
+
+$second_color: #777777;
+
+$violet_color: #c340a1;
+$blue_color: #6a6dcd;
+$red_color: #d93535;
+$turquoise_color: #00a88b;
+$verydarkgray_color: #262626;
+
+
+
+
+// Small tablets and large smartphones (landscape view)
+$screen-xs-max: 576px; // 576
+
+// Small tablets (portrait view)
+$screen-sm-max: 768px;
+
+// Tablets and small desktops
+$screen-md-max: 992px;
+
+// Large tablets and desktops
+$screen-lg-max: 1200px;

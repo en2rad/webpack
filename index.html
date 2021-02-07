@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Kanban-board7</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="./source/style/main.css" /> 
+	<script src="./source/scripts/main.js" defer type="module"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="board-canvas">
+			<!-- TODO -->
+			<div class="board-canvas__colum colum colum--todo">
+				<div class="colum__header">
+					<h2 class="colum__title">To do</h2>
+					<div class="colum__counter">0</div>	
+				</div>
+				
+				<div id="todo-body" class="colum__body">
+				</div>
+
+				<div class="colum__footer">
+					<button id="create-form" class="colum__footer-btn btn-primary">Create new</button>
+					<button id="clear-all" class="colum__footer-btn btn-primary">Clean all</button>
+				</div>		
+			</div>	
+			<!-- IN PROGRESS -->
+			<div class="board-canvas__colum colum colum--in-progress">
+				<div class="colum__header">
+					<h2 class="colum__title">In progress</h2>
+					<div class="colum__counter">0</div>	
+				</div>
+				<div id="in-progress-body" class="colum__body">
+				
+				</div>
+				<div class="colum__footer">
+					<button id="clear-all" class="colum__footer-btn btn-primary">Clean all</button>
+				</div>
+			</div>
+			<!-- DONE -->
+			<div class="board-canvas__colum colum colum--done">
+				<div class="colum__header">
+					<h2 class="colum__title">Done</h2>
+					<div class="colum__counter">0</div>	
+				</div>
+				<div id="done-body" class="colum__body">
+				</div>
+				<div class="colum__footer">
+					<button id="clear-all" class="colum__footer-btn btn-primary">Clean all</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<modal-window open="false"></modal-window>
+	<template id="modal-dialog-template">
+		<div modal class="modal-message-wrp">
+            <div class="modal-message">
+                <p class="modal-message__text">
+                    ${message}
+                </p>
+                <div class="modal-message__btn-wrap">
+                    <button id="modal-no" modal-no class="modal-message__btn btn-primary">No</button>
+                    <button id="modal-ok" class="modal-message__btn btn-primary">Ok</button>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+.colum {
+    flex-basis: 100%;
+    background: $verydarkgray_color;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    // (= HEADER =) S (= HEADER =) T (= HEADER =) A (= HEADER =) R (= HEADER =) T (= HEADER =) //
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        color: $primary_color;
+        font-size: 33px;
+        font-weight: 800;
+    }
+
+    &__counter {
+        color: $primary_color;    
+    }
+
+    // (= HEADER =) E (= HEADER =) N (= HEADER =) D (= HEADER =) // 
+
+    // (= BODY =) S (= BODY =) T (= BODY =) A (= BODY =) R (= BODY =) T (= BODY =) //
+
+    &__body {
+
+    }
+
+    &__item {
+
+    }
+
+    // (= FOOTER =) S (= FOOTER =) T (= FOOTER =) A (= FOOTER =) R (= FOOTER =) T (= FOOTER =) //
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__footer-btn {
+        
+    }
+    // (= FOOTER =) E (= FOOTER =) N (= FOOTER =) D (= FOOTER =) // 
+}

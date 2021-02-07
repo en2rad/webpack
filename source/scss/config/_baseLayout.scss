@@ -1,0 +1,26 @@
+body {
+    background: #000;
+}
+
+.wrapper {
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+}
+
+// (= BTN PRIMARY =) (= BTN PRIMARY =) (= BTN PRIMARY =) (= BTN PRIMARY =) //
+.btn-primary {
+    padding: 5px 10px;
+
+    color: $primary_color;
+    border: 1px solid;
+    border-radius: 3px;
+
+    &:not(:last-child) {
+        margin-right: 10px; 
+    }
+}
+
